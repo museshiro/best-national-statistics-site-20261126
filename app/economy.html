@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's economy 2015–2024: nominal GDP, real growth, GDP per capita and the 13 sectors. Source: BPS.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Indonesia in Numbers<small>National Statistics Explorer · Data vintage 2024</small></a>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="index.html">Dashboard</a>
+<a href="economy.html" class="active" aria-current="page">Economy</a>
+<a href="trade.html">Trade</a>
+<a href="population.html">Population</a>
+<a href="regions.html">Regions</a>
+<a href="prices-money.html">Prices &amp; Money</a>
+<a href="social.html">Welfare</a>
+<a href="about.html">About &amp; Sources</a>
+</nav>
+<button id="theme-toggle" class="theme-btn" type="button">◐ Dark</button>
+</div></header>
+<main class="wrap">
+<div class="page-head">
+<p class="crumbs"><a href="index.html">Home</a> › Economy</p>
+<h1>GDP &amp; growth</h1>
+<p class="lede">Indonesia's economy reached Rp22,139 trillion (US$1.40 trillion) in 2024 and grew 5.03% in real terms — the fifth straight year at or above 5% outside the pandemic.</p>
+<div class="controls-row">
+<label for="year-filter">Year in focus</label>
+<select id="year-filter" aria-label="Year in focus"></select>
+<span class="year-note" id="year-note">Showing 2024 — change the year to compare any year from 2015 to 2024.</span>
+</div>
+</div>
+
+<section aria-label="Headline indicators">
+<div class="kpi-grid">
+<div class="kpi hot"><div class="k-label">GDP (nominal)</div><div class="k-value">Rp22,139tn</div><div class="k-sub">US$1.40 trillion</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">GDP (PPP)</div><div class="k-value">US$4.67tn</div><div class="k-sub">IMF estimate, 2024</div><div class="k-src">Source: IMF WEO</div></div>
+<div class="kpi"><div class="k-label">Real growth</div><div class="k-value">5.03%</div><div class="k-sub">2024, year-on-year</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">GDP per capita</div><div class="k-value">Rp78.6m</div><div class="k-sub">US$4,960</div><div class="k-src">Source: BPS, 2024</div></div>
+</div>
+</section>
+
+<section class="card" aria-label="GDP chart">
+<h2>Nominal or real — switch the view</h2>
+<div class="tabs" data-group="gdp" role="tablist">
+<button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="nominal">Nominal GDP</button>
+<button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="real">Real growth</button>
+</div>
+<div class="tab-panel" data-group="gdp" data-panel="nominal">
+<p>Nominal GDP at current prices, Rp trillion, 2015–2024. It nearly doubled in ten years.</p>
+<div class="chart" id="chart-gdp-nominal" data-chart="gdp-nominal"></div>
+<button class="chart-toggle" type="button" data-for="chart-gdp-nominal">View as table</button>
+<p class="src">Source: BPS, 2015–2024.</p>
+</div>
+<div class="tab-panel" data-group="gdp" data-panel="real" hidden>
+<p>Real GDP growth, % year-on-year, 2015–2024. The −2.07% of 2020 is the pandemic year; every other year sits between 3.69% and 5.31%.</p>
+<div class="chart" id="chart-growth-line" data-chart="growth-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-growth-line">View as table</button>
+<p class="src">Source: BPS, 2015–2024.</p>
+</div>
+</section>
+
+<div class="grid-2">
+<section class="card" aria-label="GDP by sector">
+<h2>GDP by sector, 2024</h2>
+<p>Thirteen sectors, as shares of GDP. Manufacturing leads at 19.0%; the top five sectors make up 64.1% of the economy.</p>
+<div class="chart" id="chart-sectors-full" data-chart="sectors-full"></div>
+<button class="chart-toggle" type="button" data-for="chart-sectors-full">View as table</button>
+<p class="src">Source: BPS, 2024. Top-five shares are published BPS values; smaller sectors rounded from the 17-sector table.</p>
+</section>
+<section class="card" aria-label="Year in focus">
+<h2>Year in focus</h2>
+<p>The same data as the charts, for the year you picked above.</p>
+<div class="table-wrap"><table class="data-table"><tbody id="year-focus"></tbody></table></div>
+<h3>Ten-year table</h3>
+<p>Click any column header to sort.</p>
+<div class="table-wrap"><table class="data-table sortable">
+<thead><tr><th data-sort="0">Year</th><th data-sort="1" class="num">Nominal GDP (Rp tn)</th><th data-sort="2" class="num">Growth (%)</th><th data-sort="3" class="num">GDP/capita (Rp m)</th></tr></thead>
+<tbody>
+<tr><td>2015</td><td class="num">11,526.3</td><td class="num">4.88</td><td class="num">44.6</td></tr>
+<tr><td>2016</td><td class="num">12,401.7</td><td class="num">5.03</td><td class="num">47.5</td></tr>
+<tr><td>2017</td><td class="num">13,589.8</td><td class="num">5.07</td><td class="num">51.6</td></tr>
+<tr><td>2018</td><td class="num">14,838.8</td><td class="num">5.17</td><td class="num">55.8</td></tr>
+<tr><td>2019</td><td class="num">15,832.7</td><td class="num">5.02</td><td class="num">59.0</td></tr>
+<tr><td>2020</td><td class="num">15,443.4</td><td class="num">−2.07</td><td class="num">57.2</td></tr>
+<tr><td>2021</td><td class="num">16,976.7</td><td class="num">3.69</td><td class="num">62.2</td></tr>
+<tr><td>2022</td><td class="num">19,588.1</td><td class="num">5.31</td><td class="num">71.0</td></tr>
+<tr><td>2023</td><td class="num">20,892.4</td><td class="num">5.05</td><td class="num">75.0</td></tr>
+<tr><td>2024</td><td class="num">22,139.0</td><td class="num">5.03</td><td class="num">78.6</td></tr>
+</tbody></table></div>
+<p class="src">Source: BPS, 2015–2024. GDP per capita is nominal GDP divided by population.</p>
+</section>
+</div>
+
+<div class="callout"><p><b>Related:</b> the trade surplus that supports growth is on the <a href="trade.html">Trade</a> page; the wages behind household spending are on <a href="regions.html">Regions</a>.</p></div>
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav aria-label="Site map">
+<a href="index.html">Dashboard</a><a href="economy.html">Economy</a><a href="trade.html">Trade</a><a href="population.html">Population</a><a href="regions.html">Regions</a><a href="prices-money.html">Prices &amp; Money</a><a href="social.html">Welfare</a><a href="about.html">About &amp; Sources</a>
+</nav>
+<p>Indonesia in Numbers is an independent statistics explorer. Figures are from BPS (Statistics Indonesia), Bank Indonesia, the World Bank, the IMF and the Ministry of Manpower; data vintage 2024 unless labelled otherwise. This is a static snapshot — the site makes no network requests and works offline. © <span id="foot-year">2026</span></p>
+</div></footer>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
