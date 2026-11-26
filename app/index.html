@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia in Numbers — National Dashboard</title>
+<meta name="description" content="Indonesia's national statistics, 2024 vintage: GDP, population, trade, prices, welfare and regions — every figure sourced from BPS, Bank Indonesia and the World Bank.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Indonesia in Numbers<small>National Statistics Explorer · Data vintage 2024</small></a>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="index.html" class="active" aria-current="page">Dashboard</a>
+<a href="economy.html">Economy</a>
+<a href="trade.html">Trade</a>
+<a href="population.html">Population</a>
+<a href="regions.html">Regions</a>
+<a href="prices-money.html">Prices &amp; Money</a>
+<a href="social.html">Welfare</a>
+<a href="about.html">About &amp; Sources</a>
+</nav>
+<button id="theme-toggle" class="theme-btn" type="button">◐ Dark</button>
+</div></header>
+<main class="wrap">
+<div class="page-head">
+<p class="crumbs">Home</p>
+<h1>Indonesia at a glance</h1>
+<p class="lede">The national dashboard: eight headline indicators for 2024, the shape of the economy, where 281.6 million people live, and what a rupiah buys. Every figure is sourced — hover any chart point for its exact value.</p>
+<div class="controls-row">
+<label for="year-filter">Year in focus</label>
+<select id="year-filter" aria-label="Year in focus"></select>
+<span class="year-note" id="year-note">Showing 2024 — change the year to compare any year from 2015 to 2024.</span>
+</div>
+</div>
+
+<section aria-label="Headline indicators">
+<div class="kpi-grid">
+<div class="kpi hot"><div class="k-label">GDP (nominal)</div><div class="k-value">Rp22,139tn</div><div class="k-sub">≈ US$1.40 trillion</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">GDP per capita</div><div class="k-value">Rp78.6m</div><div class="k-sub">≈ US$4,960</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Real GDP growth</div><div class="k-value">5.03%</div><div class="k-sub">year-on-year, 2024</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Population</div><div class="k-value">281.6m</div><div class="k-sub">4th largest in the world</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Inflation (CPI, Dec)</div><div class="k-value">1.57%</div><div class="k-sub">year-on-year</div><div class="k-src">Source: BPS, Dec 2024</div></div>
+<div class="kpi"><div class="k-label">Unemployment</div><div class="k-value">4.91%</div><div class="k-sub">August 2024</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi hot"><div class="k-label">Poverty rate</div><div class="k-value">8.57%</div><div class="k-sub">24.06m people — lowest since 1960</div><div class="k-src">Source: BPS, Sep 2024</div></div>
+<div class="kpi"><div class="k-label">Human Development Index</div><div class="k-value">75.02</div><div class="k-sub">up from 74.39 in 2023</div><div class="k-src">Source: BPS, 2024</div></div>
+</div>
+</section>
+
+<div class="grid-2">
+<section class="card" aria-label="GDP growth">
+<h2>Growth held above 5%</h2>
+<p>Real GDP growth, 2019–2024. The 2020 pandemic contraction (−2.07%) is the only break in a decade of 5%-ish growth.</p>
+<div class="chart" id="chart-growth-mini" data-chart="growth-mini"></div>
+<button class="chart-toggle" type="button" data-for="chart-growth-mini">View as table</button>
+<p class="src">Source: BPS, 2019–2024.</p>
+</section>
+<section class="card" aria-label="GDP by sector">
+<h2>What the economy is made of</h2>
+<p>Manufacturing is the largest single sector at 19.0% of GDP; services together are over 40%.</p>
+<div class="chart" id="chart-sectors" data-chart="sectors-donut"></div>
+<button class="chart-toggle" type="button" data-for="chart-sectors">View as table</button>
+<p class="src">Source: BPS, 2024. Shares rounded. <a href="economy.html">Full 13-sector breakdown →</a></p>
+</section>
+</div>
+
+<div class="grid-2">
+<section class="card" aria-label="Largest provinces">
+<h2>Where people live</h2>
+<p>Three provinces on Java — West, East and Central Java — hold 130 million people, 46% of the country.</p>
+<div class="chart" id="chart-prov" data-chart="prov-bar"></div>
+<button class="chart-toggle" type="button" data-for="chart-prov">View as table</button>
+<p class="src">Source: BPS provincial totals, 2024. <a href="population.html">All provinces →</a></p>
+</section>
+<section class="card" aria-label="Exchange rate">
+<h2>The rupiah in 2024</h2>
+<p>Rupiah per US dollar, annual average. 2024 averaged Rp15,855 — the weakest annual average on record.</p>
+<div class="chart" id="chart-fx" data-chart="fx-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-fx">View as table</button>
+<p class="src">Source: Bank Indonesia; 2024 average: CIA World Factbook.</p>
+</section>
+</div>
+
+<section class="card" aria-label="Year in focus">
+<h2>Year in focus</h2>
+<p>Pick a year above — the table below rebuilds itself from the same data as the charts.</p>
+<div class="table-wrap"><table class="data-table"><tbody id="year-focus"></tbody></table></div>
+</section>
+
+<section class="card" aria-label="Indonesia at a glance">
+<h2>Indonesia at a glance</h2>
+<ul class="tight">
+<li><b>17,500+ islands</b> across three time zones, from Aceh to Papua — the world's largest archipelago.</li>
+<li><b>38 provinces</b>, from Jakarta (10.7m people in 664 km²) to Highland Papua.</li>
+<li><b>Southeast Asia's largest economy</b> — GDP US$1.40 trillion nominal, US$4.67 trillion at purchasing-power parity (IMF estimate, 2024).</li>
+<li><b>US$155.7 billion</b> in foreign-exchange reserves at end-2024 (Bank Indonesia).</li>
+<li><b>US$31.0 billion</b> goods trade surplus in 2024 — exports US$264.7bn, imports US$233.7bn.</li>
+</ul>
+</section>
+
+<div class="callout"><p><b>One number to remember:</b> poverty fell to <b>8.57%</b> in September 2024 — 24.06 million people, the lowest rate since records began in 1960. (March 2024 was 9.03%; the September figure is the one to quote.)</p></div>
+
+<section aria-label="Explore">
+<h2>Explore the statistics</h2>
+<div class="explore-grid">
+<a class="explore-card" href="economy.html"><b>Economy →</b><span>GDP, growth and the 13 sectors</span></a>
+<a class="explore-card" href="trade.html"><b>Trade →</b><span>Exports, imports and partners</span></a>
+<a class="explore-card" href="population.html"><b>Population →</b><span>281.6m people, by province and island</span></a>
+<a class="explore-card" href="regions.html"><b>Regions →</b><span>Provincial GDP and minimum wages</span></a>
+<a class="explore-card" href="prices-money.html"><b>Prices &amp; Money →</b><span>Inflation, BI-Rate and reserves</span></a>
+<a class="explore-card" href="social.html"><b>Welfare →</b><span>HDI, poverty, Gini and jobs</span></a>
+<a class="explore-card" href="about.html"><b>About &amp; Sources →</b><span>Definitions and data dictionary</span></a>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav aria-label="Site map">
+<a href="index.html">Dashboard</a><a href="economy.html">Economy</a><a href="trade.html">Trade</a><a href="population.html">Population</a><a href="regions.html">Regions</a><a href="prices-money.html">Prices &amp; Money</a><a href="social.html">Welfare</a><a href="about.html">About &amp; Sources</a>
+</nav>
+<p>Indonesia in Numbers is an independent statistics explorer. Figures are from BPS (Statistics Indonesia), Bank Indonesia, the World Bank, the IMF and the Ministry of Manpower; data vintage 2024 unless labelled otherwise. This is a static snapshot — the site makes no network requests and works offline. © <span id="foot-year">2026</span></p>
+</div></footer>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
