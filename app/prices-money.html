@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prices &amp; Money — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's prices and money, Aug 2023–Dec 2024: CPI inflation, BI-Rate, the rupiah and foreign-exchange reserves. Sources: BPS, Bank Indonesia.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Indonesia in Numbers<small>National Statistics Explorer · Data vintage 2024</small></a>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="index.html">Dashboard</a>
+<a href="economy.html">Economy</a>
+<a href="trade.html">Trade</a>
+<a href="population.html">Population</a>
+<a href="regions.html">Regions</a>
+<a href="prices-money.html" class="active" aria-current="page">Prices &amp; Money</a>
+<a href="social.html">Welfare</a>
+<a href="about.html">About &amp; Sources</a>
+</nav>
+<button id="theme-toggle" class="theme-btn" type="button">◐ Dark</button>
+</div></header>
+<main class="wrap">
+<div class="page-head">
+<p class="crumbs"><a href="index.html">Home</a> › Prices &amp; Money</p>
+<h1>Prices &amp; money</h1>
+<p class="lede">Inflation fell to 1.57% by December 2024 while the BI-Rate sat at 6.00% — and Bank Indonesia's reserves hit a record US$155.7 billion.</p>
+</div>
+
+<section aria-label="Headline indicators">
+<div class="kpi-grid">
+<div class="kpi hot"><div class="k-label">Inflation (CPI, Dec)</div><div class="k-value">1.57%</div><div class="k-sub">year-on-year, Dec 2024</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">BI-Rate</div><div class="k-value">6.00%</div><div class="k-sub">Dec 2024 (cut from 6.25% in Sep)</div><div class="k-src">Source: Bank Indonesia</div></div>
+<div class="kpi"><div class="k-label">FX reserves</div><div class="k-value">US$155.7bn</div><div class="k-sub">end of Dec 2024</div><div class="k-src">Source: Bank Indonesia</div></div>
+<div class="kpi"><div class="k-label">Rupiah (avg)</div><div class="k-value">Rp15,855</div><div class="k-sub">per US$, annual average 2024</div><div class="k-src">Source: CIA World Factbook</div></div>
+</div>
+</section>
+
+<div class="grid-2">
+<section class="card" aria-label="Inflation vs BI-Rate">
+<h2>Inflation vs the policy rate</h2>
+<p>Monthly CPI inflation (teal) and the BI-Rate (orange), %, Aug 2023–Dec 2024. The rate was hiked to 6.25% in April 2024, then cut back to 6.00% in September as inflation fell under 2%.</p>
+<div class="chart" id="chart-dual" data-chart="dual-money"></div>
+<button class="chart-toggle" type="button" data-for="chart-dual">View as table</button>
+<p class="src">Sources: BPS (CPI) and Bank Indonesia (BI-Rate), Aug 2023–Dec 2024.</p>
+</section>
+<section class="card" aria-label="Monthly inflation">
+<h2>Inflation month by month</h2>
+<p>CPI inflation, year-on-year, %, Aug 2023–Dec 2024. It peaked at 3.27% in August 2023 and ended 2024 at 1.57% — inside Bank Indonesia's 2.5% ± 1% target band.</p>
+<div class="chart" id="chart-infl" data-chart="infl-monthly"></div>
+<button class="chart-toggle" type="button" data-for="chart-infl">View as table</button>
+<p class="src">Source: BPS, Aug 2023–Dec 2024.</p>
+</section>
+</div>
+
+<div class="grid-2">
+<section class="card" aria-label="Foreign exchange reserves">
+<h2>Reserves at a record</h2>
+<p>Foreign-exchange reserves, US$ billion, end of year, 2020–2024. The 2024 figure, US$155.7bn, is the highest in the series.</p>
+<div class="chart" id="chart-reserves" data-chart="reserves-area"></div>
+<button class="chart-toggle" type="button" data-for="chart-reserves">View as table</button>
+<p class="src">Source: Bank Indonesia, 2020–2024.</p>
+</section>
+<section class="card" aria-label="Exchange rate">
+<h2>The rupiah's year</h2>
+<p>Rupiah per US dollar, annual average, 2020–2024. Note: 15,855 is the <b>annual average</b> for 2024, not the end-year rate (which was 16,157).</p>
+<div class="chart" id="chart-fx2" data-chart="fx-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-fx2">View as table</button>
+<p class="src">Sources: Bank Indonesia; 2024 annual average: CIA World Factbook.</p>
+</section>
+</div>
+
+<div class="callout"><p><b>How to read this page:</b> inflation is the change in the consumer price index from the same month a year earlier; the BI-Rate is Bank Indonesia's 7-day reverse repo rate, the benchmark for bank lending. <a href="about.html">Definitions →</a></p></div>
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav aria-label="Site map">
+<a href="index.html">Dashboard</a><a href="economy.html">Economy</a><a href="trade.html">Trade</a><a href="population.html">Population</a><a href="regions.html">Regions</a><a href="prices-money.html">Prices &amp; Money</a><a href="social.html">Welfare</a><a href="about.html">About &amp; Sources</a>
+</nav>
+<p>Indonesia in Numbers is an independent statistics explorer. Figures are from BPS (Statistics Indonesia), Bank Indonesia, the World Bank, the IMF and the Ministry of Manpower; data vintage 2024 unless labelled otherwise. This is a static snapshot — the site makes no network requests and works offline. © <span id="foot-year">2026</span></p>
+</div></footer>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
