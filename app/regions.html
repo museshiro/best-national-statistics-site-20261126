@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regions — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's regions 2024–2025: provincial GDP, GDP per capita and minimum wages (UMP) for 13 verified provinces. Sources: BPS, Ministry of Manpower.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Indonesia in Numbers<small>National Statistics Explorer · Data vintage 2024</small></a>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="index.html">Dashboard</a>
+<a href="economy.html">Economy</a>
+<a href="trade.html">Trade</a>
+<a href="population.html">Population</a>
+<a href="regions.html" class="active" aria-current="page">Regions</a>
+<a href="prices-money.html">Prices &amp; Money</a>
+<a href="social.html">Welfare</a>
+<a href="about.html">About &amp; Sources</a>
+</nav>
+<button id="theme-toggle" class="theme-btn" type="button">◐ Dark</button>
+</div></header>
+<main class="wrap">
+<div class="page-head">
+<p class="crumbs"><a href="index.html">Home</a> › Regions</p>
+<h1>Regional economy &amp; wages</h1>
+<p class="lede">Jakarta's economy alone is about Rp3,400 trillion — bigger than most countries in the region — while the lowest provincial minimum wage, in Central Java, is Rp2,169,349 a month.</p>
+</div>
+
+<section aria-label="Headline indicators">
+<div class="kpi-grid">
+<div class="kpi hot"><div class="k-label">Largest GRDP: Jakarta</div><div class="k-value">≈Rp3,400tn</div><div class="k-sub">15% of national GDP</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Highest GRDP per capita</div><div class="k-value">Rp344.35m</div><div class="k-sub">Jakarta, 2024</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Highest minimum wage</div><div class="k-value">Rp5,396,761</div><div class="k-sub">Jakarta, UMP 2025</div><div class="k-src">Source: Kemnaker, 2025</div></div>
+<div class="kpi"><div class="k-label">Lowest minimum wage</div><div class="k-value">Rp2,169,349</div><div class="k-sub">Central Java, UMP 2025</div><div class="k-src">Source: Kemnaker, 2025</div></div>
+</div>
+</section>
+
+<div class="grid-2">
+<section class="card" aria-label="Provincial GDP">
+<h2>Provincial GDP (GRDP), 2024</h2>
+<p>Ten largest provincial economies, Rp trillion. Values are rounded from BPS provincial tables (marked ≈).</p>
+<div class="chart" id="chart-pdrb" data-chart="pdrb-hbar"></div>
+<button class="chart-toggle" type="button" data-for="chart-pdrb">View as table</button>
+<div class="table-wrap"><table class="data-table sortable">
+<thead><tr><th data-sort="0">Province</th><th data-sort="1" class="num">GRDP 2024 (Rp tn, ~)</th><th data-sort="2" class="num">Per capita (Rp m)</th></tr></thead>
+<tbody>
+<tr><td>Jakarta</td><td class="num">≈3,400</td><td class="num">344.35</td></tr>
+<tr><td>West Java</td><td class="num">≈2,800</td><td class="num">—</td></tr>
+<tr><td>East Java</td><td class="num">≈2,700</td><td class="num">—</td></tr>
+<tr><td>Central Java</td><td class="num">≈1,900</td><td class="num">—</td></tr>
+<tr><td>North Sumatra</td><td class="num">≈1,050</td><td class="num">—</td></tr>
+<tr><td>East Kalimantan</td><td class="num">≈950</td><td class="num">—</td></tr>
+<tr><td>Banten</td><td class="num">≈900</td><td class="num">70.28</td></tr>
+<tr><td>Riau</td><td class="num">≈850</td><td class="num">—</td></tr>
+<tr><td>South Sulawesi</td><td class="num">≈750</td><td class="num">—</td></tr>
+<tr><td>South Sumatra</td><td class="num">≈700</td><td class="num">—</td></tr>
+<tr><td>Yogyakarta</td><td class="num">—</td><td class="num">51.47</td></tr>
+</tbody></table></div>
+<p class="src">Source: BPS provincial tables, 2024. Per-capita figures are the published BPS values where shown; “—” means not published in the verified set.</p>
+</section>
+<section class="card" aria-label="Population vs GRDP">
+<h2>Big people, big economy?</h2>
+<p>Population (millions) against GRDP (Rp trillion) for the six largest provinces. Jakarta is the outlier: 10.7 million people, ≈Rp3,400 trillion of output.</p>
+<div class="chart" id="chart-scatter" data-chart="scatter-pdrb"></div>
+<button class="chart-toggle" type="button" data-for="chart-scatter">View as table</button>
+<p class="src">Sources: BPS population and GRDP, 2024. Bubble position only — size is not scaled.</p>
+</section>
+</div>
+
+<section class="card" aria-label="Minimum wages">
+<h2>Minimum wage (UMP) 2025</h2>
+<p>Provincial minimum wages, Rp per month, from governor decrees via the Ministry of Manpower. The national average rise was 6.5% (Permenaker No. 16/2024). Only provinces with a verified decree value are listed — 13 of 37.</p>
+<div class="chart" id="chart-ump" data-chart="ump-hbar"></div>
+<button class="chart-toggle" type="button" data-for="chart-ump">View as table</button>
+<div class="search-row">
+<label for="ump-search">Search provinces</label>
+<input type="search" id="ump-search" data-search-for="ump-table" placeholder="Type to filter, e.g. Java">
+<span class="count-note" id="ump-table-count">Showing 13 of 13</span>
+</div>
+<div class="table-wrap"><table class="data-table sortable" id="ump-table">
+<thead><tr><th data-sort="0">Province</th><th data-sort="1" class="num">UMP 2025 (Rp/month)</th></tr></thead>
+<tbody>
+<tr><td>Jakarta</td><td class="num">5,396,761</td></tr>
+<tr><td>Aceh</td><td class="num">3,685,616</td></tr>
+<tr><td>South Sumatra</td><td class="num">3,681,571</td></tr>
+<tr><td>South Sulawesi</td><td class="num">3,657,527</td></tr>
+<tr><td>East Kalimantan</td><td class="num">3,579,314</td></tr>
+<tr><td>Riau</td><td class="num">3,508,776</td></tr>
+<tr><td>Bali</td><td class="num">2,996,560</td></tr>
+<tr><td>North Sumatra</td><td class="num">2,992,559</td></tr>
+<tr><td>Banten</td><td class="num">2,905,119</td></tr>
+<tr><td>West Nusa Tenggara</td><td class="num">2,602,931</td></tr>
+<tr><td>East Java</td><td class="num">2,305,985</td></tr>
+<tr><td>West Java</td><td class="num">2,191,232</td></tr>
+<tr><td>Central Java</td><td class="num">2,169,349</td></tr>
+</tbody></table></div>
+<p class="src">Source: Ministry of Manpower / governor decrees, 2025. The gap between Jakarta and Central Java is 2.5×.</p>
+</section>
+
+<div class="callout"><p><b>Related:</b> where those people live is on <a href="population.html">Population</a>; what they earn against prices is on <a href="prices-money.html">Prices &amp; Money</a>.</p></div>
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav aria-label="Site map">
+<a href="index.html">Dashboard</a><a href="economy.html">Economy</a><a href="trade.html">Trade</a><a href="population.html">Population</a><a href="regions.html">Regions</a><a href="prices-money.html">Prices &amp; Money</a><a href="social.html">Welfare</a><a href="about.html">About &amp; Sources</a>
+</nav>
+<p>Indonesia in Numbers is an independent statistics explorer. Figures are from BPS (Statistics Indonesia), Bank Indonesia, the World Bank, the IMF and the Ministry of Manpower; data vintage 2024 unless labelled otherwise. This is a static snapshot — the site makes no network requests and works offline. © <span id="foot-year">2026</span></p>
+</div></footer>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
