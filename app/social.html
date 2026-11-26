@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welfare — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's welfare 2015–2024: HDI 75.02, poverty 8.57%, Gini 0.379, unemployment 4.91%. Source: BPS.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Indonesia in Numbers<small>National Statistics Explorer · Data vintage 2024</small></a>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="index.html">Dashboard</a>
+<a href="economy.html">Economy</a>
+<a href="trade.html">Trade</a>
+<a href="population.html">Population</a>
+<a href="regions.html">Regions</a>
+<a href="prices-money.html">Prices &amp; Money</a>
+<a href="social.html" class="active" aria-current="page">Welfare</a>
+<a href="about.html">About &amp; Sources</a>
+</nav>
+<button id="theme-toggle" class="theme-btn" type="button">◐ Dark</button>
+</div></header>
+<main class="wrap">
+<div class="page-head">
+<p class="crumbs"><a href="index.html">Home</a> › Welfare</p>
+<h1>Welfare &amp; inequality</h1>
+<p class="lede">Human development hit 75.02 in 2024, poverty fell to its lowest since 1960, and inequality sits at a Gini of 0.379. The decade in four charts.</p>
+</div>
+
+<section aria-label="Headline indicators">
+<div class="kpi-grid">
+<div class="kpi hot"><div class="k-label">Human Development Index</div><div class="k-value">75.02</div><div class="k-sub">up from 69.55 in 2015</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Poverty rate</div><div class="k-value">8.57%</div><div class="k-sub">24.06m people, Sep 2024</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Gini ratio</div><div class="k-value">0.379</div><div class="k-sub">March 2024</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Life expectancy</div><div class="k-value">74.15 yrs</div><div class="k-sub">at birth, 2024</div><div class="k-src">Source: BPS, 2024</div></div>
+</div>
+</section>
+
+<div class="grid-2">
+<section class="card" aria-label="Human Development Index">
+<h2>Human development, 2015–2024</h2>
+<p>HDI (BPS scale, 0–100). It rose every year except the flat pandemic year of 2020, gaining 5.47 points in a decade.</p>
+<div class="chart" id="chart-hdi" data-chart="hdi-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-hdi">View as table</button>
+<p class="src">Source: BPS, 2015–2024.</p>
+</section>
+<section class="card" aria-label="Poverty rate">
+<h2>Poverty, 2015–2024</h2>
+<p>Poverty rate, %, September each year. The pandemic pushed it back over 10% in 2020; by September 2024 it was 8.57% — the lowest since 1960.</p>
+<div class="chart" id="chart-poverty" data-chart="poverty-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-poverty">View as table</button>
+<p class="src">Source: BPS, September each year. Poverty line Sep 2024: Rp595,242 per person per month.</p>
+</section>
+</div>
+
+<div class="grid-2">
+<section class="card" aria-label="Gini ratio">
+<h2>Inequality, 2015–2024</h2>
+<p>Gini ratio, March each year (0 = perfect equality, 1 = one person holds everything). It fell from 0.408 in 2015 to 0.379 in 2024.</p>
+<div class="chart" id="chart-gini" data-chart="gini-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-gini">View as table</button>
+<p class="src">Source: BPS, March each year, 2015–2024.</p>
+</section>
+<section class="card" aria-label="Unemployment">
+<h2>Jobs, 2015–2024</h2>
+<p>Open unemployment rate, %, August each year. It spiked to 7.07% in 2020 and fell to 4.91% by August 2024 — the lowest in the series.</p>
+<div class="chart" id="chart-unemp" data-chart="unemp-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-unemp">View as table</button>
+<p class="src">Source: BPS (Sakernas), August each year, 2015–2024.</p>
+</section>
+</div>
+
+<section class="card" aria-label="Welfare decade table">
+<h2>The decade in one table</h2>
+<p>Click any column header to sort.</p>
+<div class="table-wrap"><table class="data-table sortable">
+<thead><tr><th data-sort="0">Year</th><th data-sort="1" class="num">HDI</th><th data-sort="2" class="num">Poverty (%)</th><th data-sort="3" class="num">Gini</th><th data-sort="4" class="num">Unemployment (%)</th></tr></thead>
+<tbody>
+<tr><td>2015</td><td class="num">69.55</td><td class="num">11.13</td><td class="num">0.408</td><td class="num">6.18</td></tr>
+<tr><td>2016</td><td class="num">70.18</td><td class="num">10.86</td><td class="num">0.397</td><td class="num">5.61</td></tr>
+<tr><td>2017</td><td class="num">70.81</td><td class="num">10.12</td><td class="num">0.391</td><td class="num">5.50</td></tr>
+<tr><td>2018</td><td class="num">71.39</td><td class="num">9.66</td><td class="num">0.384</td><td class="num">5.34</td></tr>
+<tr><td>2019</td><td class="num">71.92</td><td class="num">9.22</td><td class="num">0.380</td><td class="num">5.28</td></tr>
+<tr><td>2020</td><td class="num">71.94</td><td class="num">10.19</td><td class="num">0.381</td><td class="num">7.07</td></tr>
+<tr><td>2021</td><td class="num">72.29</td><td class="num">9.71</td><td class="num">0.384</td><td class="num">6.49</td></tr>
+<tr><td>2022</td><td class="num">73.37</td><td class="num">9.57</td><td class="num">0.381</td><td class="num">5.86</td></tr>
+<tr><td>2023</td><td class="num">74.39</td><td class="num">9.36</td><td class="num">0.379</td><td class="num">5.32</td></tr>
+<tr><td>2024</td><td class="num">75.02</td><td class="num">8.57</td><td class="num">0.379</td><td class="num">4.91</td></tr>
+</tbody></table></div>
+<p class="src">Source: BPS, 2015–2024. Poverty is the September figure; Gini the March figure; unemployment the August figure. Literacy (age 15+) was 96.70% in 2023 (Susenas).</p>
+</section>
+
+<div class="callout"><p><b>Related:</b> the wages behind these numbers are on <a href="regions.html">Regions</a>; the growth behind them is on <a href="economy.html">Economy</a>.</p></div>
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav aria-label="Site map">
+<a href="index.html">Dashboard</a><a href="economy.html">Economy</a><a href="trade.html">Trade</a><a href="population.html">Population</a><a href="regions.html">Regions</a><a href="prices-money.html">Prices &amp; Money</a><a href="social.html">Welfare</a><a href="about.html">About &amp; Sources</a>
+</nav>
+<p>Indonesia in Numbers is an independent statistics explorer. Figures are from BPS (Statistics Indonesia), Bank Indonesia, the World Bank, the IMF and the Ministry of Manpower; data vintage 2024 unless labelled otherwise. This is a static snapshot — the site makes no network requests and works offline. © <span id="foot-year">2026</span></p>
+</div></footer>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
