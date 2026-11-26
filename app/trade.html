@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foreign Trade — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's foreign trade 2020–2024: exports US$264.7bn, imports US$233.7bn, top commodities and partners. Sources: BPS, World Bank, UN Comtrade.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Indonesia in Numbers<small>National Statistics Explorer · Data vintage 2024</small></a>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="index.html">Dashboard</a>
+<a href="economy.html">Economy</a>
+<a href="trade.html" class="active" aria-current="page">Trade</a>
+<a href="population.html">Population</a>
+<a href="regions.html">Regions</a>
+<a href="prices-money.html">Prices &amp; Money</a>
+<a href="social.html">Welfare</a>
+<a href="about.html">About &amp; Sources</a>
+</nav>
+<button id="theme-toggle" class="theme-btn" type="button">◐ Dark</button>
+</div></header>
+<main class="wrap">
+<div class="page-head">
+<p class="crumbs"><a href="index.html">Home</a> › Trade</p>
+<h1>Foreign trade</h1>
+<p class="lede">Indonesia exported US$264.7 billion of goods in 2024 and imported US$233.7 billion — a surplus of US$31.0 billion, the fifth surplus in a row.</p>
+</div>
+
+<section aria-label="Headline indicators">
+<div class="kpi-grid">
+<div class="kpi hot"><div class="k-label">Exports of goods</div><div class="k-value">US$264.7bn</div><div class="k-sub">+2.3% on 2023</div><div class="k-src">Source: BPS / World Bank, 2024</div></div>
+<div class="kpi"><div class="k-label">Imports of goods</div><div class="k-value">US$233.7bn</div><div class="k-sub">+5.3% on 2023</div><div class="k-src">Source: BPS / World Bank, 2024</div></div>
+<div class="kpi"><div class="k-label">Trade surplus</div><div class="k-value">US$31.0bn</div><div class="k-sub">down from US$54.6bn in 2022</div><div class="k-src">Source: BPS / World Bank, 2024</div></div>
+<div class="kpi"><div class="k-label">Top partner: China</div><div class="k-value">US$62.6bn</div><div class="k-sub">23.7% of exports</div><div class="k-src">Source: BPS, 2024</div></div>
+</div>
+</section>
+
+<section class="card" aria-label="Trade flows">
+<h2>Exports, imports and the balance</h2>
+<div class="tabs" data-group="trade" role="tablist">
+<button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="flows">Exports vs imports</button>
+<button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="balance">Balance only</button>
+</div>
+<div class="tab-panel" data-group="trade" data-panel="flows">
+<p>Goods trade, US$ billion, 2020–2024. The 2022 spike is the commodity-price peak; both flows fell back in 2023.</p>
+<div class="chart" id="chart-trade-grouped" data-chart="trade-grouped"></div>
+<button class="chart-toggle" type="button" data-for="chart-trade-grouped">View as table</button>
+<p class="src">Source: BPS / World Bank WDI, 2020–2024.</p>
+</div>
+<div class="tab-panel" data-group="trade" data-panel="balance" hidden>
+<p>Goods trade balance, US$ billion, 2020–2024. The surplus peaked at US$54.6bn in 2022.</p>
+<div class="chart" id="chart-balance" data-chart="balance-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-balance">View as table</button>
+<p class="src">Source: BPS / World Bank WDI, 2020–2024.</p>
+</div>
+</section>
+
+<div class="grid-2">
+<section class="card" aria-label="Top export commodities">
+<h2>What Indonesia sells</h2>
+<p>Top export groups, 2024, HS 2-digit, US$ billion. Mineral fuels alone are a fifth of all goods exports.</p>
+<div class="chart" id="chart-commodities" data-chart="commodities-hbar"></div>
+<button class="chart-toggle" type="button" data-for="chart-commodities">View as table</button>
+<div class="search-row">
+<label for="commodity-search">Search commodities</label>
+<input type="search" id="commodity-search" data-search-for="commodity-table" placeholder="Type to filter, e.g. nickel">
+<span class="count-note" id="commodity-table-count">Showing 10 of 10</span>
+</div>
+<div class="table-wrap"><table class="data-table sortable" id="commodity-table">
+<thead><tr><th data-sort="0">HS</th><th data-sort="1">Commodity group</th><th data-sort="2" class="num">US$bn</th></tr></thead>
+<tbody>
+<tr><td>27</td><td>Mineral fuels &amp; oils</td><td class="num">55.5</td></tr>
+<tr><td>15</td><td>Animal &amp; vegetable oils (palm oil)</td><td class="num">26.8</td></tr>
+<tr><td>72</td><td>Iron &amp; steel</td><td class="num">25.8</td></tr>
+<tr><td>85</td><td>Electrical machinery</td><td class="num">12.4</td></tr>
+<tr><td>84</td><td>Machinery &amp; mechanical parts</td><td class="num">9.8</td></tr>
+<tr><td>26</td><td>Ores, slag &amp; ash</td><td class="num">8.9</td></tr>
+<tr><td>75</td><td>Nickel &amp; articles thereof</td><td class="num">8.0</td></tr>
+<tr><td>87</td><td>Vehicles &amp; parts</td><td class="num">6.4</td></tr>
+<tr><td>64</td><td>Footwear</td><td class="num">6.0</td></tr>
+<tr><td>40</td><td>Rubber &amp; articles thereof</td><td class="num">5.5</td></tr>
+</tbody></table></div>
+<p class="src">Source: BPS / UN Comtrade, HS 2-digit, 2024. Top three are published HS totals; the rest rounded from the same grouping.</p>
+</section>
+<section class="card" aria-label="Top export partners">
+<h2>Who buys it</h2>
+<p>Top export destinations, 2024, US$ billion. China takes almost a quarter of Indonesia's goods exports; the top ten take 72%.</p>
+<div class="chart" id="chart-partners" data-chart="partners-hbar"></div>
+<button class="chart-toggle" type="button" data-for="chart-partners">View as table</button>
+<div class="table-wrap"><table class="data-table sortable">
+<thead><tr><th data-sort="0">Destination</th><th data-sort="1" class="num">US$bn</th><th data-sort="2" class="num">Share (%)</th></tr></thead>
+<tbody>
+<tr><td>China</td><td class="num">62.6</td><td class="num">23.7</td></tr>
+<tr><td>United States</td><td class="num">28.0</td><td class="num">10.6</td></tr>
+<tr><td>Japan</td><td class="num">21.0</td><td class="num">7.9</td></tr>
+<tr><td>India</td><td class="num">20.2</td><td class="num">7.6</td></tr>
+<tr><td>Singapore</td><td class="num">18.0</td><td class="num">6.8</td></tr>
+<tr><td>Malaysia</td><td class="num">12.4</td><td class="num">4.7</td></tr>
+<tr><td>South Korea</td><td class="num">10.2</td><td class="num">3.9</td></tr>
+<tr><td>Vietnam</td><td class="num">7.6</td><td class="num">2.9</td></tr>
+<tr><td>Philippines</td><td class="num">7.4</td><td class="num">2.8</td></tr>
+<tr><td>Netherlands</td><td class="num">6.0</td><td class="num">2.3</td></tr>
+</tbody></table></div>
+<p class="src">Source: BPS, 2024. Shares are of goods exports (US$264.7bn).</p>
+</section>
+</div>
+
+<div class="callout"><p><b>Related:</b> the reserves the surplus feeds are on <a href="prices-money.html">Prices &amp; Money</a>; the sectors behind the exports are on <a href="economy.html">Economy</a>.</p></div>
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav aria-label="Site map">
+<a href="index.html">Dashboard</a><a href="economy.html">Economy</a><a href="trade.html">Trade</a><a href="population.html">Population</a><a href="regions.html">Regions</a><a href="prices-money.html">Prices &amp; Money</a><a href="social.html">Welfare</a><a href="about.html">About &amp; Sources</a>
+</nav>
+<p>Indonesia in Numbers is an independent statistics explorer. Figures are from BPS (Statistics Indonesia), Bank Indonesia, the World Bank, the IMF and the Ministry of Manpower; data vintage 2024 unless labelled otherwise. This is a static snapshot — the site makes no network requests and works offline. © <span id="foot-year">2026</span></p>
+</div></footer>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
