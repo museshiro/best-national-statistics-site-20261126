@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Population — Indonesia in Numbers</title>
+<meta name="description" content="Indonesia's population 2010–2024: 281.6 million people, by province and island group. Source: BPS.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<a class="brand" href="index.html">Indonesia in Numbers<small>National Statistics Explorer · Data vintage 2024</small></a>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="index.html">Dashboard</a>
+<a href="economy.html">Economy</a>
+<a href="trade.html">Trade</a>
+<a href="population.html" class="active" aria-current="page">Population</a>
+<a href="regions.html">Regions</a>
+<a href="prices-money.html">Prices &amp; Money</a>
+<a href="social.html">Welfare</a>
+<a href="about.html">About &amp; Sources</a>
+</nav>
+<button id="theme-toggle" class="theme-btn" type="button">◐ Dark</button>
+</div></header>
+<main class="wrap">
+<div class="page-head">
+<p class="crumbs"><a href="index.html">Home</a> › Population</p>
+<h1>Population &amp; demography</h1>
+<p class="lede">281.6 million people in 2024 — the world's fourth-largest population — spread over 38 provinces, with 55.9% living on Java.</p>
+</div>
+
+<section aria-label="Headline indicators">
+<div class="kpi-grid">
+<div class="kpi hot"><div class="k-label">Population</div><div class="k-value">281.6m</div><div class="k-sub">mid-year 2024</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Growth</div><div class="k-value">~1.0%</div><div class="k-sub">per year, 2023–2024</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Urban share</div><div class="k-value">59.2%</div><div class="k-sub">of the population</div><div class="k-src">Source: BPS, 2024</div></div>
+<div class="kpi"><div class="k-label">Density</div><div class="k-value">~148/km²</div><div class="k-sub">on 1.9m km² of land</div><div class="k-src">Derived: BPS, 2024</div></div>
+</div>
+</section>
+
+<div class="grid-2">
+<section class="card" aria-label="Population trend">
+<h2>Still growing, more slowly</h2>
+<p>Population, millions, 2010–2024. The 2010 point is the census count (237.6m); later years are BPS mid-year projections.</p>
+<div class="chart" id="chart-pop-line" data-chart="pop-line"></div>
+<button class="chart-toggle" type="button" data-for="chart-pop-line">View as table</button>
+<p class="src">Source: BPS census 2010 and mid-year projections, 2015–2024.</p>
+</section>
+<section class="card" aria-label="Population by island">
+<h2>Java dominates</h2>
+<div class="tabs" data-group="islands" role="tablist">
+<button class="tab-btn active" type="button" role="tab" aria-selected="true" data-tab="all">By island group</button>
+<button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="java">Java vs the rest</button>
+</div>
+<div class="tab-panel" data-group="islands" data-panel="all">
+<p>Share of population by island group, 2024. Java holds 55.9%; Sumatra 21.6%.</p>
+<div class="chart" id="chart-islands" data-chart="islands-donut"></div>
+<button class="chart-toggle" type="button" data-for="chart-islands">View as table</button>
+</div>
+<div class="tab-panel" data-group="islands" data-panel="java" hidden>
+<p>Java vs everywhere else, 2024. About 157 million people live on Java — an island smaller than the UK's land area by population density.</p>
+<div class="chart" id="chart-java" data-chart="java-donut"></div>
+<button class="chart-toggle" type="button" data-for="chart-java">View as table</button>
+</div>
+<p class="src">Source: BPS, 2024. Shares rounded; they sum to 100%.</p>
+</section>
+</div>
+
+<section class="card" aria-label="Largest provinces">
+<h2>Largest provinces</h2>
+<p>Ten largest provinces by population, 2024, millions. The first six are published BPS totals; the last four are rounded from the same table. Search or sort the table.</p>
+<div class="chart" id="chart-prov-10" data-chart="prov-bar-10"></div>
+<button class="chart-toggle" type="button" data-for="chart-prov-10">View as table</button>
+<div class="search-row">
+<label for="province-search">Search provinces</label>
+<input type="search" id="province-search" data-search-for="province-table" placeholder="Type to filter, e.g. Java">
+<span class="count-note" id="province-table-count">Showing 10 of 10</span>
+</div>
+<div class="table-wrap"><table class="data-table sortable" id="province-table">
+<thead><tr><th data-sort="0">Province</th><th data-sort="1" class="num">Population 2024 (million)</th></tr></thead>
+<tbody>
+<tr><td>West Java</td><td class="num">50.345</td></tr>
+<tr><td>East Java</td><td class="num">41.815</td></tr>
+<tr><td>Central Java</td><td class="num">37.892</td></tr>
+<tr><td>North Sumatra</td><td class="num">15.6</td></tr>
+<tr><td>Banten</td><td class="num">12.431</td></tr>
+<tr><td>Jakarta</td><td class="num">10.685</td></tr>
+<tr><td>South Sulawesi</td><td class="num">9.6</td></tr>
+<tr><td>Lampung</td><td class="num">9.5</td></tr>
+<tr><td>South Sumatra</td><td class="num">9.1</td></tr>
+<tr><td>Riau</td><td class="num">7.0</td></tr>
+</tbody></table></div>
+<p class="src">Source: BPS provincial totals, 2024. The other 28 provinces hold the remaining 68.5 million people.</p>
+</section>
+
+<div class="callout"><p><b>Related:</b> how each province's economy compares is on <a href="regions.html">Regions</a>; the working-age picture — unemployment 4.91% — is on <a href="social.html">Welfare</a>.</p></div>
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav aria-label="Site map">
+<a href="index.html">Dashboard</a><a href="economy.html">Economy</a><a href="trade.html">Trade</a><a href="population.html">Population</a><a href="regions.html">Regions</a><a href="prices-money.html">Prices &amp; Money</a><a href="social.html">Welfare</a><a href="about.html">About &amp; Sources</a>
+</nav>
+<p>Indonesia in Numbers is an independent statistics explorer. Figures are from BPS (Statistics Indonesia), Bank Indonesia, the World Bank, the IMF and the Ministry of Manpower; data vintage 2024 unless labelled otherwise. This is a static snapshot — the site makes no network requests and works offline. © <span id="foot-year">2026</span></p>
+</div></footer>
+<script src="js/data.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
